@@ -14,6 +14,7 @@
     ];
     packages = with pkgs; [
       tree
+      git
     ];
 
     openssh.authorizedKeys.keys = [
