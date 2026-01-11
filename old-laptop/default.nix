@@ -15,6 +15,10 @@
     packages = with pkgs; [
       tree
     ];
+
+    openssh.authorizedKeys.keys = [
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDXD4WjEgEw4oDoPj2s3sV3SXuBNEzZaK+htmVW6d7wH tranghoangphongvu@gmail.com"
+    ];
   };
 
   time.timeZone = "Europe/Paris";
@@ -28,7 +32,7 @@
   services.openssh = {
     enable = true;
     settings = {
-      PasswordAuthentication = false;
+      PasswordAuthentication = true;
     };
   };
 
