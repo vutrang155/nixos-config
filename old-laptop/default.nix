@@ -44,6 +44,7 @@
     firewall.allowedTCPPorts = [
       22 # SSH
       8445 # Incus
+      8080 # Marathon dashboard
     ];
   };
 
