@@ -65,7 +65,7 @@
   virtualisation.incus.enable = true;
   virtualisation.incus.ui.enable = true;
 
-hardware.bluetooth.enable = false;
+  boot.blacklistedKernelModules = [ "btusb" "bluetooth" ];
 
   security.sudo.wheelNeedsPassword = true;
   system.stateVersion = "25.11";
