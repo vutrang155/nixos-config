@@ -65,6 +65,8 @@
   virtualisation.incus.enable = true;
   virtualisation.incus.ui.enable = true;
 
+hardware.bluetooth.enable = false;
+
   security.sudo.wheelNeedsPassword = true;
   system.stateVersion = "25.11";
 }
